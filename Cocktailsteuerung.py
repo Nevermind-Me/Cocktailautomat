@@ -234,9 +234,9 @@ if __name__ == "__main__":
             ReadyFile = open(pathReadyFile, "w")
             ReadyStr = ReadyFile.write("True")
             ReadyFile.close()
-            pixels.fill(0,0,0)
+            pixels.fill((0,0,0))
             pixels.show()
             GPIO.cleanup() #alles clearen
-            os.system("sudo shutdown -now")
+            os.system("sudo shutdown 0")
             break
         time.sleep(0.1)
